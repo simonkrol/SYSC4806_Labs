@@ -26,7 +26,7 @@ public class AddressBookController {
     }
 
     @GetMapping("addressBooks/{id}")
-    public String addressBookShow(@PathVariable("id") Long id, Model model) {
+    public String addressBookShow(@PathVariable("id") long id, Model model) {
         AddressBook book = repository.findById(id);
 
         model.addAttribute("addressBook", book);
@@ -43,7 +43,7 @@ public class AddressBookController {
     }
 
     @PostMapping("/addressBooks/{id}/addBuddy")
-    public String addBuddy(@PathVariable("id") Long id, @RequestParam(value = "name") String name,
+    public String addBuddy(@PathVariable("id") long id, @RequestParam(value = "name") String name,
                            @RequestParam(value="phoneNumber") String phoneNumber) {
         AddressBook addressBook = repository.findById(id);
         BuddyInfo buddy = new BuddyInfo(name, phoneNumber);
@@ -54,7 +54,7 @@ public class AddressBookController {
     }
 
     @PostMapping("/addressBooks/{id}/removeBuddy")
-    public String removeBuddy(@PathVariable("id") Long id, @RequestParam(value = "name") String name,
+    public String removeBuddy(@PathVariable("id") long id, @RequestParam(value = "name") String name,
                            @RequestParam(value="phoneNumber") String phoneNumber) {
         AddressBook addressBook = repository.findById(id);
         List<BuddyInfo> buddies = buddy_repository.findByNameAndPhoneNumber(name, phoneNumber);
