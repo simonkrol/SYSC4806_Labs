@@ -27,7 +27,7 @@ public class BuddyInfoIntegrationTest {
 
     @Before
     public void setUp() {
-        BuddyInfo buddyInfo = new BuddyInfo("Ralph", "1800-267-2001 ALAAARM FORCE");
+        BuddyInfo buddyInfo = new BuddyInfo("Ralph", "1800-267-2001 ALAAARM FORCE", "Some place in ottawa");
         repository.save(buddyInfo);
     }
 
@@ -39,6 +39,7 @@ public class BuddyInfoIntegrationTest {
                         "    \"buddies\" : [ {\n" +
                         "      \"name\" : \"Ralph\",\n" +
                         "      \"phoneNumber\" : \"1800-267-2001 ALAAARM FORCE\",\n" +
+                        "      \"address\" : \"Some place in ottawa\",\n" +
                         "      \"_links\" : {\n" +
                         "        \"self\" : {\n" +
                         "          \"href\" : \"http://localhost/buddies/1\"\n" +

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.AddressBookIntegrationTest" time="0.283" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="model.AddressBookIntegrationTest" time="0.317" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2020.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -57,5 +57,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="booksIndexShouldReturnAddressBooks" classname="model.AddressBookIntegrationTest" time="0.283"/>
+  <testcase name="booksIndexShouldReturnAddressBooks" classname="model.AddressBookIntegrationTest" time="0.317"/>
 </testsuite>

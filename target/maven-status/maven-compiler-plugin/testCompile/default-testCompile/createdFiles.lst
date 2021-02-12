@@ -1,2 +1,4 @@
 model/AddressBookIntegrationTest.class
 model/BuddyInfoIntegrationTest.class
+model/BuddyInfoTest.class
+model/AddressBookTest.class

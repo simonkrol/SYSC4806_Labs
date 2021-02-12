@@ -57,9 +57,9 @@ public class AddressBook {
     }
 
     public static void main(String args[]) {
-        BuddyInfo buddy1 = new BuddyInfo("Peter", "(613)-123-1234");
-        BuddyInfo buddy2 = new BuddyInfo("Frank", "(613)-321-3210");
-        BuddyInfo buddy3 = new BuddyInfo("Guadeloop", "(613)-555-5555");
+        BuddyInfo buddy1 = new BuddyInfo("Peter", "(613)-123-1234", "221B Baker Street");
+        BuddyInfo buddy2 = new BuddyInfo("Frank", "(613)-321-3210", "24 Sussex Drive");
+        BuddyInfo buddy3 = new BuddyInfo("Guadeloop", "(613)-555-5555", "P Sherman 42 Wallaby Way");
 
         AddressBook book = new AddressBook();
 

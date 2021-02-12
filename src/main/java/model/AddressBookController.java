@@ -44,9 +44,10 @@ public class AddressBookController {
 
     @PostMapping("/addressBooks/{id}/addBuddy")
     public String addBuddy(@PathVariable("id") long id, @RequestParam(value = "name") String name,
-                           @RequestParam(value="phoneNumber") String phoneNumber) {
+                           @RequestParam(value="phoneNumber") String phoneNumber,
+                            @RequestParam(value="address") String address) {
         AddressBook addressBook = repository.findById(id);
-        BuddyInfo buddy = new BuddyInfo(name, phoneNumber);
+        BuddyInfo buddy = new BuddyInfo(name, phoneNumber, address);
         addressBook.addBuddy(buddy);
         repository.save(addressBook);
 

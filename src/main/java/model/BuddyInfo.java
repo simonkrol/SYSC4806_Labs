@@ -12,14 +12,15 @@ public class BuddyInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id = null;
-    private String name, phoneNumber;
+    private String name, phoneNumber, address;
 
     public BuddyInfo() {}
 
     //Creates a model.BuddyInfo with a name and phone number
-    public BuddyInfo(String name, String phoneNumber){
+    public BuddyInfo(String name, String phoneNumber, String address){
         this.name = name;
         this.phoneNumber = phoneNumber;
+        this.address = address;
     }
 
     public Long getId() {
@@ -40,9 +41,14 @@ public class BuddyInfo {
         return phoneNumber;
     }
 
+    //returns the Buddy's phone number
+    public String getAddress(){
+        return address;
+    }
+
     public String toString()
     {
-        return "Name: " + name + "    PhoneNumber: " + phoneNumber;
+        return "Name: " + name + "    PhoneNumber: " + phoneNumber + "     Address: " + address;
     }
 
 }
