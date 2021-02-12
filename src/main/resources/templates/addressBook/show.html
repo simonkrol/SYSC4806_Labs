@@ -7,7 +7,7 @@
 
 <h1 th:text="'Address Book ' + ${addressBook.getId()}"></h1>
 <ul>
-    <li th:each="buddy : ${addressBook.buddies}" th:text="${buddy.getName()} + ' (' + ${buddy.getPhoneNumber()} + ')'" ></li>
+    <li th:each="buddy : ${addressBook.buddies}" th:text="${buddy.getName()} + ' (' + ${buddy.getPhoneNumber()} + ')' + ' - ' + ${buddy.getAddress()}" ></li>
 </ul>
 </body>
 </html>
