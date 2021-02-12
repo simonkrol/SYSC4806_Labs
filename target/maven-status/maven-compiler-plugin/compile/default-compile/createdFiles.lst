@@ -1,0 +1,6 @@
+model/BuddyInfo.class
+model/BuddyInfoRepository.class
+model/AddressBookController.class
+model/Main.class
+model/AddressBook.class
+model/AddressBookRepository.class

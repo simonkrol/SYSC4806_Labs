@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Address Books</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jq.js"></script>
+</head>
+<body>
+<h1>Address Books</h1>
+<ul>
+    <li th:each="book : ${addressBooks}">
+        <a th:text="'Address book ' + ${book.getId()}" th:href="'/addressBooks/'+ ${book.getId()}"></a>
+    </li>
+</ul>
+</body>
+</html>
