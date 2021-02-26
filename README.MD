@@ -6,7 +6,15 @@
 
 
 ### Usage
+#### Lab 6
+EX: Create new AddressBooks and BuddyInfos on a SPA:
+[Heroku](https://simonkrol-sysc4806-lab5.herokuapp.com/)
 
+EX: Create new AddressBooks and BuddyInfos using a traditional client side :
+[Heroku](https://simonkrol-sysc4806-lab5.herokuapp.com/addressBooks)
+
+
+#### Lab 5
 EX: Create new address book via curl or with a POST request to:
 `https://simonkrol-sysc4806-lab5.herokuapp.com/addressBooks`
 
