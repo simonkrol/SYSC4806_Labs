@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: model.AddressBookIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.401 sec - in model.AddressBookIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.007 sec - in model.AddressBookIntegrationTest
