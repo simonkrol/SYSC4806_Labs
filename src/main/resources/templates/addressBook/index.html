@@ -12,5 +12,8 @@
         <a th:text="'Address book ' + ${book.getId()}" th:href="'/addressBooks/'+ ${book.getId()}"></a>
     </li>
 </ul>
+<form action="#" th:action="@{/addressBooks}" method="post">
+    <input type="submit" value="Create new address book"/>
+</form>
 </body>
 </html>

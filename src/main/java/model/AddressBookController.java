@@ -18,7 +18,12 @@ public class AddressBookController {
     private BuddyInfoRepository buddy_repository;
 
 
-    @GetMapping(value={"/addressBooks", "/"})
+    @GetMapping("/")
+    public String home() {
+        return "home";
+    }
+
+    @GetMapping(value={"/addressBooks"})
     public String addressBookForm(Model model) {
         model.addAttribute("addressBooks", repository.findAll());
         model.addAttribute("addressBook", new AddressBook());
